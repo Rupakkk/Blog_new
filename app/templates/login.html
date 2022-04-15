@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+<!-- {% load crispy_forms_tags %} -->
+{% load static %}
+
+
+{% block content %}
+<form method="post" ><!-- method="post" class="bootstrap4" -->
+    {% csrf_token %}
+    <table>
+        {{form1}}
+        
+    </table>
+    <input type="submit" value="Submit">
+</form>
+
+{% endblock content %}
